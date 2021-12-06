@@ -26,4 +26,4 @@ ENV SHELL bash
 
 RUN apt install libopenmpi-dev -y && pip3 install mpi4py && pip3 install jupyterlab_slurm && pip3 install nbgitpuller
 
-ENTRYPOINT [ "/bin/sh", "-c" , "echo 10.14.20.159  b5r13u9 >> /etc/hosts" && "/etc/slurm-llnl/docker-entrypoint.sh"]
+ENTRYPOINT [ "/etc/slurm-llnl/docker-entrypoint.sh"]
