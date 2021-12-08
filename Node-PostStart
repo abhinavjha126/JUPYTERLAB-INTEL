@@ -1,0 +1,4 @@
+lifecycle:
+              postStart:
+                exec:
+                   command: ["/bin/sh", "-c", "service slurmd restart"]
